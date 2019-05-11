@@ -75,7 +75,7 @@ Sorunları bildirmek için ise http://www.kodevreni.com adresinde konu açarak d
 
 # Uygulamadan Resimler
 
-![Gerçek Cihaz](https://www.kodevreni.com/uploads/monthly_2019_05/Screenshot_20190511-160227.thumb.jpg.fb828acb4636d7e9bd77dde92cce7a21.jpg "Gerçek Cihaz")
+![Gerçek Cihaz Huawei P9 Lite 2017 1920 x 1080](https://www.kodevreni.com/uploads/monthly_2019_05/Screenshot_20190511-160227.thumb.jpg.fb828acb4636d7e9bd77dde92cce7a21.jpg "Gerçek Cihaz Huawei P9 Lite 2017 1920 x 1080")
 
 Gerçek Cihaz Huawei P9 Lite 2017 1920 x 1080
 
