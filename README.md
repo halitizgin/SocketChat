@@ -90,3 +90,7 @@ Emülatör Google Pixel 2 1920x1080
 Bu şekilde 3 farklı cihazla local bir test gerçekleştirdim. Sonuç başarılıydı.
 
 Not: Tabii bu server projesini bir server'a deploy edebilirsiniz. Bunun için internetten "Node.js deploy" yazarak istediğiniz sonuçları bulabilirsiniz.
+
+# Projeye Hazır Olarak Erişmek Ya da Soru Sormak İsteyenler
+
+Bunun için https://www.kodevreni.com/4601-react-native-ve-socketio-ile-real-time-chat-uygulamas%C4%B1/ adresini ziyaret edebilirsiniz.
