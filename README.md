@@ -55,9 +55,9 @@ const ip = '192.168.43.105';//Ip adresi yanlış olursa çalışmaz.
 ```
 Buraya ip adresini yapıştırın. Daha sonra kaydederek ```react-native run-android``` komutunu çalıştırabilirsiniz.
 
-# Wifi desteklemeyen bilgisayar için;
+# Wifi desteklemeyen bilgisayar için; 
 
-Bunun için yine ```ipconfig``` komutunu komut satırında çalıştırırsanız yine üst başlıktaki işlemi yapmanız gerekir.
+Bu seçenekte muhtemelen bilgisayarınıza internet kablo ile bağlıdır. Test etmek istediğiniz cihazı da kablosu bağlı olan modeme wifi ile bağlanmanız yeterli. Sonra ise ip adresini almanız gerekmektedir. Bunun için yine ```ipconfig``` komutunu komut satırında çalıştırırsanız yine üst başlıktaki işlemi yapmanız gerekir.
 
 ![Gerçek Cihaz ipconfig 2](https://www.kodevreni.com/uploads/monthly_2019_05/Screenshot_3.png.d7aad61709260d57ad18878a9556f32a.png "Gerçek Cihaz ipconfig 2")
 
