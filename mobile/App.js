@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, TextInput, Button, Text, ScrollView} from 'react-native';
+import { createStackNavigator } from 'react-navigation';
 
 import io from 'socket.io-client';
 
@@ -15,7 +16,7 @@ export default class App extends Component {
   }
 
   connectSocket = () => {
-    const ip = '192.168.43.105';//Ip adresi yanlış olursa çalışmaz.
+    const ip = '192.168.106.97';//Ip adresi yanlış olursa çalışmaz.
     this.io = io.connect(`http://${ip}:3000`, {
       timeout: 10000
     });
