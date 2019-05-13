@@ -14,10 +14,14 @@ io.on('connection', socket => {
         const data = { from: '', message: socket.name + " bağlandı." }
         messages.push(data);
         io.emit('updateUser', data);
-        io.emit('updateCount', activeUsers.length);
+        io.emit('updateActiveUsers', activeUsers);
         socket.emit('unSeenMessages', messages);
         console.log(socket.name + " user connected.");
         console.log("Active users count: " + activeUsers.length);
+    });
+
+    socket.on('drawerConnect', data => {
+        console.log(data);
     });
 
     socket.on('sendMessage', data => {
@@ -31,7 +35,7 @@ io.on('connection', socket => {
         const data = { from: '', message: socket.name + " çıkış yaptı." };
         messages.push(data);
         io.emit('updateUser', data);
-        io.emit('updateCount', activeUsers.length);
+        io.emit('updateActiveUsers', activeUsers);
         console.log(socket.name + " disconnected.");
         console.log("Active users count: " + activeUsers.length);
     });
