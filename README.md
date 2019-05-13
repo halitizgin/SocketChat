@@ -22,7 +22,7 @@ ya da
 
 Buradalarda kırmızı dikdörtgen arasındaki ip'yi kopyalıyoruz.
 
-Projemizin mobile klasöründeki projenin içindeki src/store/IOStore.js dosyasını açıyoruz.
+Projemizin mobile klasöründeki projenin içindeki ```src/store/IOStore.js``` dosyasını açıyoruz.
 
 ```
 @observable ip = '192.168.x.x'; //Ip adresi yanlış olursa çalışmaz.
@@ -48,7 +48,7 @@ Bu seçenek için yapmanız gereken test etmek istediğiniz cihaz ile bilgisayar
 
 Dikdörtgen ile gösterilen kısımdaki ip'yi kopyalayın. Daha sonra yine yukarıdaki başlık gibi;
 
-src/store/IOStore.js dosyasını açın ve şu satırı bulun;
+```src/store/IOStore.js``` dosyasını açın ve şu satırı bulun;
 
 ```
 @observable ip = '192.168.x.x'; //Ip adresi yanlış olursa çalışmaz.
@@ -61,7 +61,7 @@ Bu seçenekte muhtemelen bilgisayarınıza internet kablo ile bağlıdır. Test 
 
 ![Gerçek Cihaz ipconfig 2](https://www.kodevreni.com/uploads/monthly_2019_05/Screenshot_3.png.d7aad61709260d57ad18878a9556f32a.png "Gerçek Cihaz ipconfig 2")
 
-Yukarıdaki dikdörtgenle işaretli kısımdaki adresi kopyalayıp yine src/store/IOStore.js içerisindeki şu satırı bulun:
+Yukarıdaki dikdörtgenle işaretli kısımdaki adresi kopyalayıp yine ```src/store/IOStore.js``` içerisindeki şu satırı bulun:
 
 ```
 @observable ip = '192.168.x.x'; //Ip adresi yanlış olursa çalışmaz.
