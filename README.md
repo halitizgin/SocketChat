@@ -22,10 +22,10 @@ ya da
 
 Buradalarda kırmızı dikdörtgen arasındaki ip'yi kopyalıyoruz.
 
-Projemizin mobile klasöründeki projenin içindeki App.js dosyasını açıyoruz.
+Projemizin mobile klasöründeki projenin içindeki src/store/IOStore.js dosyasını açıyoruz.
 
 ```
-const ip = '192.168.43.105';//Ip adresi yanlış olursa çalışmaz.
+@observable ip = '192.168.x.x'; //Ip adresi yanlış olursa çalışmaz.
 ```
 
 Not: IOS için localhost yazmanız yeterli olacaktır.
@@ -34,7 +34,7 @@ Bu satırın karşısındaki tek tırnak arasındaki değere kopyaladığınız 
 
 Hemen ardından da ```react-native run-android``` komutu ile projenizi açın. Yanlış ip adresini almadıysanız Socket.io server'a başarılı şekilde bağlantı sağlanacaktır. 
 
-İsminizi girdikten sonra Yukarıdaki Kişi aktif yazan kısımda sayı 0 kalıyorsa, bağlantı başarısız demektir. Eğer 1 ya da daha fazla bir değer varsa bağlantı başarılı demektir.
+İsminizi girdikten sonra 5 saniye sonunda bağlantı gerçekleşmezse , bağlantı başarısız demektir. Zaten bir alert pencersiyle uyarılacaksınız.
 
 # Gerçek Cihazda Uygulamayı Test Etmek
 
@@ -48,10 +48,10 @@ Bu seçenek için yapmanız gereken test etmek istediğiniz cihaz ile bilgisayar
 
 Dikdörtgen ile gösterilen kısımdaki ip'yi kopyalayın. Daha sonra yine yukarıdaki başlık gibi;
 
-App.js dosyasını açın ve şu satırı bulun;
+src/store/IOStore.js dosyasını açın ve şu satırı bulun;
 
 ```
-const ip = '192.168.43.105';//Ip adresi yanlış olursa çalışmaz.
+@observable ip = '192.168.x.x'; //Ip adresi yanlış olursa çalışmaz.
 ```
 Buraya ip adresini yapıştırın. Daha sonra kaydederek ```react-native run-android``` komutunu çalıştırabilirsiniz.
 
@@ -61,10 +61,10 @@ Bu seçenekte muhtemelen bilgisayarınıza internet kablo ile bağlıdır. Test 
 
 ![Gerçek Cihaz ipconfig 2](https://www.kodevreni.com/uploads/monthly_2019_05/Screenshot_3.png.d7aad61709260d57ad18878a9556f32a.png "Gerçek Cihaz ipconfig 2")
 
-Yukarıdaki dikdörtgenle işaretli kısımdaki adresi kopyalayıp yine App.js içerisindeki şu satırı bulun:
+Yukarıdaki dikdörtgenle işaretli kısımdaki adresi kopyalayıp yine src/store/IOStore.js içerisindeki şu satırı bulun:
 
 ```
-const ip = '192.168.43.105';//Ip adresi yanlış olursa çalışmaz.
+@observable ip = '192.168.x.x'; //Ip adresi yanlış olursa çalışmaz.
 ```
 
 Daha sonra kopyaladığınız adresi buraya yapıştırın. 
@@ -75,17 +75,23 @@ Sorunları bildirmek için ise http://www.kodevreni.com adresinde konu açarak d
 
 # Uygulamadan Resimler
 
-![Gerçek Cihaz Huawei P9 Lite 2017 1920 x 1080](https://www.kodevreni.com/uploads/monthly_2019_05/Screenshot_20190511-160227.thumb.jpg.fb828acb4636d7e9bd77dde92cce7a21.jpg "Gerçek Cihaz Huawei P9 Lite 2017 1920 x 1080")
-
 Gerçek Cihaz Huawei P9 Lite 2017 1920 x 1080
 
-![Emülatör Google Nexus S 480x800](https://www.kodevreni.com/uploads/monthly_2019_05/Screenshot_1557579743.thumb.png.725dfdf971eb3de178710ccb3fd7aa4d.png "Emülatör Google Nexus S 480x800")
+![Gerçek Cihaz Huawei P9 Lite 2017 1920 x 1080](https://www.kodevreni.com/uploads/monthly_2019_05/Huawei-main.thumb.jpg.ab923259060b346329a2ce2a802431cb.jpg "Gerçek Cihaz Huawei P9 Lite 2017 1920 x 1080")
+
+![Gerçek Cihaz Huawei P9 Lite 2017 1920 x 1080](https://www.kodevreni.com/uploads/monthly_2019_05/Huawei-drawer.thumb.jpg.cc714b2dd1ee4554347cbbe92530c582.jpg "Gerçek Cihaz Huawei P9 Lite 2017 1920 x 1080")
 
 Emülatör Google Nexus S 480x800
 
-![Emülatör Google Pixel 2 1920x1080](https://www.kodevreni.com/uploads/monthly_2019_05/Screenshot_1557579731.thumb.png.e6e0d99e282b154a2b4d2a3a337cfffa.png "Emülatör Google Pixel 2 1920x1080")
+![Emülatör Google Nexus S 480x800](https://www.kodevreni.com/uploads/monthly_2019_05/S-main.thumb.png.d9b95cf864dcae801ec3a7f83b64a83e.png "Emülatör Google Nexus S 480x800")
+
+![Emülatör Google Nexus S 480x800](https://www.kodevreni.com/uploads/monthly_2019_05/S-drawer.thumb.png.38bae0c74b8cdf4454d059806cfd7469.png "Emülatör Google Nexus S 480x800")
 
 Emülatör Google Pixel 2 1920x1080
+
+![Emülatör Google Pixel 2 1920x1080](https://www.kodevreni.com/uploads/monthly_2019_05/Pixel-main.thumb.png.23df8ea7ba242fd9fb031c8770ed4abc.png "Emülatör Google Pixel 2 1920x1080")
+
+![Emülatör Google Pixel 2 1920x1080](https://www.kodevreni.com/uploads/monthly_2019_05/Pixel-drawer.thumb.png.93327230211045bce405b95f8c6e9274.png "Emülatör Google Pixel 2 1920x1080")
 
 Bu şekilde 3 farklı cihazla local bir test gerçekleştirdim. Sonuç başarılıydı.
 
@@ -94,3 +100,11 @@ Not: Tabii bu server projesini bir server'a deploy edebilirsiniz. Bunun için in
 # Projeye Hazır Olarak Erişmek Ya da Soru Sormak İsteyenler
 
 Bunun için https://www.kodevreni.com/4601-react-native-ve-socketio-ile-real-time-chat-uygulamas%C4%B1/ adresini ziyaret edebilirsiniz.
+
+# Proje Güncelleme Notları
+
+Proje artık tek ekran içinde değil, 2 ekran içerisinde çalışmakta.
+Ayrıca Chat ekranında sağ menü yer almakta ve bu menü de aktif olan kullanıcı listesi yer almakta.
+Ayrıca kodlama düzeni açısından da bir kaç düzenleme getirildi.
+Projeye Mobx store eklendi.
+Proje Icon eklendi.
