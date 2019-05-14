@@ -109,14 +109,6 @@ const styles = StyleSheet.create({
         borderColor: '#ccc',
         borderWidth: 1
     },
-    onlineContainer: {
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginHorizontal: 3
-    },
-    onlineCount: {
-        fontSize: 26
-    },
     nothing: {
         marginVertical: 5,
         marginHorizontal: 5
