@@ -16,8 +16,7 @@ export default class ChatScreen extends Component {
 
     state = {
         message: '',
-        messages: [],
-        onEditing: false
+        messages: []
     }
 
     componentWillUnmount(){
