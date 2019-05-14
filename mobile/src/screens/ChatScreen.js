@@ -20,14 +20,6 @@ export default class ChatScreen extends Component {
         onEditing: false
     }
 
-    onEndEditing = () => {
-        if (this.state.onEditing)
-        {
-            this.setState({onEditing: false});
-            this.io.emit('endTyping');
-        }
-    }
-
     componentWillUnmount(){
         this.io.disconnect();
     }  
